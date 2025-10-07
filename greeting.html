@@ -77,7 +77,8 @@
     var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
 
     var greet;
-    if (hrs < 12) greet = 'good morning, Umutcan.';
+    if (hrs >= 0 && hrs < 5) greet = 'good night, Umutcan.';
+    else if (hrs < 12) greet = 'good morning, Umutcan.';
     else if (hrs >= 12 && hrs <= 17) greet = 'good afternoon, Umutcan.';
     else greet = 'good evening, Umutcan.';
 
